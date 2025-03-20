@@ -88,7 +88,7 @@ void stack_empty(Stack* s){
  */
 void stack_print(Stack *s){
     if (stack_is_empty(s)) {
-        printf("La pila está vacía.\n");
+        printf("La pila esta vacia.\n");
         return;
     }
     printf("Elementos de la pila: ");
