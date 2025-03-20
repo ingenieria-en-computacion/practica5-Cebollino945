@@ -1,4 +1,5 @@
 #include "stack.h"
+#include <stdio.h>
 
 /**
  * Crea una nueva pila vacía y la devuelve.
@@ -59,10 +60,10 @@ Data stack_pop(Stack* s){
  *          como `stack_pop` en una pila vacía.
  */
 int stack_is_empty(Stack* s){
-    if (s == -1) {
-        return 1;
+    if (s == NULL) {
+        return -1;
     }
-    return 0;
+    return s->top == -1 ? 1 : 0;
 }
 
 /**
