@@ -13,7 +13,7 @@ Stack stack_create(int len){
     Stack s;
     s.data = (Data*)malloc(len * sizeof(Data));
     if (s.data == NULL) {
-        printf("Error: No se pudo asignar memoria para la pila.\n");
+        printf(" No se pudo asignar memoria para la pila.\n");
         s.top = -1;
         return s;
     }
@@ -49,7 +49,7 @@ Data stack_pop(Stack* s){
         s->top--;
         return d;
     } else {
-        printf("La pila está vacía.\n");
+        printf("La pila esta vacia.\n");
         return -1; 
     }
 }
@@ -104,7 +104,7 @@ void stack_delete(Stack *s){
  */
 void stack_print(Stack *s){
     if (stack_is_empty(s)) {
-        printf("La pila está vacía.\n");
+        printf("La pila esta vacia.\n");
         return;
     }
     printf("Elementos de la pila: ");
